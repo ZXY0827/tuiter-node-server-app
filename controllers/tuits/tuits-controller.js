@@ -15,7 +15,7 @@ const createTuit = (req, res) => {
     newTuit.handle = "@nasa";
     newTuit.time = "2h";
 
-    tuits.push(newTuit);
+    tuits.unshift(newTuit);
     res.json(newTuit);
 }
 const findTuits  = (req, res) => {
